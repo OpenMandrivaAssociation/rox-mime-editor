@@ -13,7 +13,6 @@ Source0: http://prdownloads.sourceforge.net/rox/%fname-%version.tar.bz2
 License: GPL
 Group: Graphical desktop/Other
 URL: http://rox.sf.net/mime_editor.php3
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: rox-lib
 Buildarch: noarch
 
