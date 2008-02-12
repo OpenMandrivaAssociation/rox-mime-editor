@@ -18,7 +18,6 @@ Requires: rox-lib
 Buildarch: noarch
 
 %description
-
 The Shared MIME Database stores information about file types. It holds
 information such as "Files with names ending in .html have the MIME
 type text/html" and "A text/html file should be described as an `HTML
