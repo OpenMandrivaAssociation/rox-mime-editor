@@ -2,7 +2,7 @@
 %define oname MIME-Editor
 %define fname mime-editor
 %define version 0.5
-%define release %mkrel 2
+%define release %mkrel 4
 %define appdir %_prefix/lib/apps
 
 Summary: MIME database editor
