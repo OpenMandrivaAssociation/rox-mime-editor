@@ -53,3 +53,43 @@ rm -rf $RPM_BUILD_ROOT
 %appdir/%oname/.DirIcon
 %dir %appdir/%oname/Messages
 
+
+
+%changelog
+* Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.5-5mdv2010.0
++ Revision: 433393
+- rebuild
+
+* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.5-4mdv2009.0
++ Revision: 242558
+- rebuild
+- fix spacing at top of description
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Mon Jul 31 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.5-1mdv2007.0
+- Rebuild
+
+* Fri Dec 16 2005 GÃ¶tz Waschk <waschk@mandriva.org> 0.5-1mdk
+- New release 0.5
+- use mkrel
+
+* Thu Jul 21 2005 Götz Waschk <waschk@mandriva.org> 0.4-1mdk
+- update file list
+- don't use %%_libdir
+- add source URL
+- new version
+
+* Sun Mar 13 2005 Götz Waschk <waschk@linux-mandrake.com> 0.1.3-2mdk
+- drop prefix
+
+* Wed Feb 25 2004 Götz Waschk <waschk@linux-mandrake.com> 0.1.3-1mdk
+- add new files
+- new version
+
+* Mon Nov 24 2003 Götz Waschk <waschk@linux-mandrake.com> 0.1.2-1mdk
+- new version
+
