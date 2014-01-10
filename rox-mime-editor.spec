@@ -7,13 +7,12 @@
 
 Summary: MIME database editor
 Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://prdownloads.sourceforge.net/rox/%fname-%version.tar.bz2
+Version: 0.6
+Release: 1
+Source0: https://sourceforge.net/projects/rox/files/MIME-Editor/0.6/mime-editor-%{version}.tar.bz2
 License: GPL
 Group: Graphical desktop/Other
 URL: http://rox.sf.net/mime_editor.php3
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: rox-lib
 Buildarch: noarch
 
@@ -32,20 +31,17 @@ can use MIME-Editor for the task.
 %build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p %buildroot/%appdir
-cp -r %oname %buildroot/%appdir
-rm -f %buildroot%appdir/%oname/Messages/dist
-rm -f %buildroot%appdir/%oname/Messages/*po
-for gmo in %buildroot%appdir/%oname/Messages/*.gmo;do
-echo "%lang($(basename $gmo|sed s/.gmo//)) $(echo $gmo|sed s!%buildroot!!)" >> %name.lang
+mkdir -p %{buildroot}/%appdir
+cp -r %oname %{buildroot}/%appdir
+rm -f %{buildroot}%appdir/%oname/Messages/dist
+rm -f %{buildroot}%appdir/%oname/Messages/*po
+for gmo in %{buildroot}%appdir/%oname/Messages/*.gmo;do
+echo "%lang($(basename $gmo|sed s/.gmo//)) $(echo $gmo|sed s!%{buildroot}!!)" >> %name.lang
 done
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
-%defattr(-,root,root)
 %doc %appdir/%oname/Help
 %dir %appdir/%oname/
 %appdir/%oname/*.*
@@ -77,19 +73,20 @@ rm -rf $RPM_BUILD_ROOT
 - New release 0.5
 - use mkrel
 
-* Thu Jul 21 2005 Götz Waschk <waschk@mandriva.org> 0.4-1mdk
+* Thu Jul 21 2005 GÃ¶tz Waschk <waschk@mandriva.org> 0.4-1mdk
 - update file list
 - don't use %%_libdir
 - add source URL
 - new version
 
-* Sun Mar 13 2005 Götz Waschk <waschk@linux-mandrake.com> 0.1.3-2mdk
+* Sun Mar 13 2005 GÃ¶tz Waschk <waschk@linux-mandrake.com> 0.1.3-2mdk
 - drop prefix
 
-* Wed Feb 25 2004 Götz Waschk <waschk@linux-mandrake.com> 0.1.3-1mdk
+* Wed Feb 25 2004 GÃ¶tz Waschk <waschk@linux-mandrake.com> 0.1.3-1mdk
 - add new files
 - new version
 
-* Mon Nov 24 2003 Götz Waschk <waschk@linux-mandrake.com> 0.1.2-1mdk
+* Mon Nov 24 2003 GÃ¶tz Waschk <waschk@linux-mandrake.com> 0.1.2-1mdk
 - new version
+
 
