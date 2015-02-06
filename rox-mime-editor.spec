@@ -2,13 +2,13 @@
 %define oname MIME-Editor
 %define fname mime-editor
 %define version 0.5
-%define release %mkrel 5
+%define release 6
 %define appdir %_prefix/lib/apps
 
 Summary: MIME database editor
 Name: %{name}
 Version: 0.6
-Release: 1
+Release: 2
 Source0: https://sourceforge.net/projects/rox/files/MIME-Editor/0.6/mime-editor-%{version}.tar.bz2
 License: GPL
 Group: Graphical desktop/Other
