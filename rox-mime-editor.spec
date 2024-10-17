@@ -12,7 +12,7 @@ Release: 2
 Source0: https://sourceforge.net/projects/rox/files/MIME-Editor/0.6/mime-editor-%{version}.tar.bz2
 License: GPL
 Group: Graphical desktop/Other
-URL: http://rox.sf.net/mime_editor.php3
+URL: https://rox.sf.net/mime_editor.php3
 Requires: rox-lib
 Buildarch: noarch
 
